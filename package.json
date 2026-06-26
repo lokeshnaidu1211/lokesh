@@ -1,0 +1,35 @@
+{
+  "name": "political-analytics-platform",
+  "version": "1.0.0",
+  "description": "Enterprise-grade AI Political Analytics Platform",
+  "private": true,
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "test:cov": "npm run test:cov --workspaces",
+    "lint": "npm run lint --workspaces",
+    "format": "prettier --write \"apps/**/*.{ts,tsx,json,md}\"",
+    "setup": "npm install && npm run setup --workspaces",
+    "clean": "npm run clean --workspaces"
+  },
+  "keywords": [
+    "political",
+    "analytics",
+    "voter",
+    "campaign",
+    "ai",
+    "gcp",
+    "firebase"
+  ],
+  "author": "Your Organization",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}
